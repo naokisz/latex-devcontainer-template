@@ -1,0 +1,23 @@
+{
+    "name": "alpine-texlive-ja",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "alpine-texlive-ja",
+    "workspaceFolder": "/workdir/alpine-texlive-ja",
+    "shutdownAction": "stopCompose",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop",
+                "taichi.vscode-textlint",
+                "mhutchie.git-graph",
+                "vsls-contrib.gitdoc",
+                "Gruntfuggly.todo-tree",
+                "oderwat.indent-rainbow",
+                "eamodio.gitlens",
+                "streetsidesoftware.code-spell-checker",
+                "yzhang.dictionary-completion"
+            ]
+        }
+    }
+}

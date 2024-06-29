@@ -1,0 +1,14 @@
+services:
+  alpine-texlive-ja:
+    #image: korosuke613/ubuntu-texlive-ja-devcontainer
+    #image: paperist/texlive-ja:alpine
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
+    #user: "${UID}:${GID}"
+    #user: naokisz:naokisz
+    volumes:
+      - ../:/workdir/alpine-texlive-ja
+      - ~/luatex-cache:/home/vscode/.texlive2024/texmf-var/luatex-cache
+      #- ../../repo:/workdir/repo
