@@ -20,7 +20,7 @@ RUN apk add --no-cache nodejs npm \
         textlint-rule-preset-ja-technical-writing \
         textlint-rule-prh
 
-RUN apk add --no-cache shadow git openssh zip
+RUN apk add --no-cache shadow git openssh zip ghostscript
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
